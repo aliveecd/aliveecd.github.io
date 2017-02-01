@@ -11,7 +11,7 @@ body {
   font-family: "Overpass", "Helvetica Neue", "Yu Gothic", YuGothic, sans-serif;
   font-size: 1.6em;
   color: #000;
-  line-height: 1.6;
+  line-height: 1.8;
   font-feature-settings: 'pkna' 1;
   letter-spacing: .05em;
 }
@@ -203,20 +203,24 @@ hr.to {
   height: 0;
   border-style: solid;
   border-width: 20px 20px 0 20px;
-  border-color: #dddddd transparent transparent transparent;
+  border-color: #f60 transparent transparent transparent;
 }
 
 .step {
   text-align: center;
-  border: 2px solid #ddd;
+  border: 2px solid #f60;
   border-radius: 2rem;
   padding: 2rem;
 }
 @media only screen and (min-width: 35em) {
   .step {
     border-radius: 4rem;
-    padding: 4rem;
   }
+}
+
+.step > h4 span {
+  display: block;
+  color: #f60;
 }
 
 footer {
@@ -241,12 +245,6 @@ footer iframe {
   padding: 1rem 4rem;
   text-decoration: none;
   color: #000;
-  -webkit-transition: opacity .1s linear;
-  transition: opacity .1s linear;
-}
-
-a.btn:hover {
-  opacity: .7;
 }
 
 .btn-primary {
@@ -255,16 +253,62 @@ a.btn:hover {
   font-weight: bold;
   font-size: 1.8rem;
   padding: 2rem;
+  box-shadow: 2px 2px 0 #000;
+}
+.btn-primary:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  box-shadow: 1px 1px 0 #000;
 }
 @media only screen and (min-width: 35em) {
   .btn-primary {
-    font-size: 2rem;
-    padding: 2rem 4rem;
+    font-size: 3rem;
+    padding: 4rem;
   }
 }
 
+.lead {
+  font-weight: bold;
+}
 
+.lead strong {
+  color: #f60;
+}
 
+.pic {
+  max-height: 200px;
+}
+
+small {
+  display: inline-block;
+}
+
+a { color: #f60; }
+a:hover { text-decoration: none; }
+
+.text-warning {
+  color: #f60;
+}
+
+.box {
+  padding: 4rem;
+}
+
+aside .container-narrow {
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border: 1px solid #ddd;
+  border-radius:  6px;
+}
+@media only screen and (min-width: 35em) {
+  aside .container-narrow {
+    margin-bottom: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 /* ==========================================================================
    Media Queries
