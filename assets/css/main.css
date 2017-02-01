@@ -296,17 +296,18 @@ a:hover { text-decoration: none; }
 }
 
 aside .container-narrow {
-  margin-bottom: 4rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
   border: 1px solid #ddd;
   border-radius:  6px;
 }
-@media only screen and (min-width: 64em) {
-  aside .container-narrow {
+
+aside {
+  margin-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media only screen and (min-width: 35em) {
+  aside {
     margin-bottom: 8rem;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
