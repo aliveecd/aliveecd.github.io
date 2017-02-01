@@ -13,7 +13,6 @@ body {
   color: #000;
   line-height: 1.8;
   font-feature-settings: 'pkna' 1;
-  letter-spacing: .05em;
 }
 
 ::-moz-selection {
