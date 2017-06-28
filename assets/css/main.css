@@ -271,14 +271,18 @@ footer iframe {
 
 .btn-primary {
   display: block;
-  background: #ff0;
+  background: #eee;
   font-weight: bold;
   font-size: 1.8rem;
   padding: 2rem;
   box-shadow: 2px 2px 0 #000;
 }
 
-.btn:hover {
+a.btn-primary {
+  background: #ff0;
+}
+
+a.btn:hover {
   position: relative;
   top: 1px;
   left: 1px;
@@ -347,6 +351,41 @@ aside {
   aside {
     margin-bottom: 8rem;
   }
+}
+
+.thank-you {
+  margin: 4rem 0;
+  padding: 2rem 0;
+  background: rgb(126,196,239);
+}
+
+.plate {
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.plate > span {
+  display: block;
+  font-size: 48px;
+  white-space: nowrap;
+}
+
+.plate-primary {
+  background: #f60;
+  color: #fff;
+}
+
+.plate-secondary {
+  background: #fff;
+}
+
+.big-thanks {
+  margin: 4rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* ==========================================================================
